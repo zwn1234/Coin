@@ -1,7 +1,12 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 public class Main {
     public static void main(String[] args) {
-       
-        Coin penny = new Coin();
+        File file = new 
+        Game g = new Game();
+        g.play();
+          Coin penny = new Coin();
         System.out.println(penny);
         System.out.println(penny.getState());
         penny.flip();
@@ -23,6 +28,5 @@ public class Main {
         Player ZyisW = new Player(100);
         ZyisW.flip(penny, "tails", 50);
         System.out.println(ZyisW.getBalance());
-
     }
 }
